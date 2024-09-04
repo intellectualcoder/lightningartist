@@ -67,6 +67,10 @@ footer {
     padding: 20px;
 }
 
+.contact {
+    font-weight: bold;
+}
+
 footer p {
     margin: 5px 0;
 }
