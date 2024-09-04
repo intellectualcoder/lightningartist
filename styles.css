@@ -19,8 +19,16 @@ header h1 {
 }
 
 header p {
-    font-size: 1.5rem;
-    margin: 10px 0 0;
+    font-size: 1rem;
+    margin: 50px 15px 20px;
+}
+
+h2 {
+    margin-bottom: 40px;
+}
+
+img {
+    margin-bottom: 15px;
 }
 
 section#gallery {
@@ -78,7 +86,10 @@ footer p {
 footer a {
     color: #ffffff;
     text-decoration: none;
+    font-weight: 200;
 }
+
+
 
 footer a:hover {
     text-decoration: underline;
