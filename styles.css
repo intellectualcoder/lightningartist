@@ -1,3 +1,6 @@
+*{
+scroll-behavior: smooth;}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -33,6 +36,10 @@ body::after {
 }
 
 /* Generate random star positions */
+.intro {
+    padding: 44px 100px;
+}
+
 .star {
     position: absolute;
     background: url('/assets/aestheticarena_com_downloaded_image_vxld.jpg') no-repeat;
@@ -291,11 +298,28 @@ form button:hover {
     background: url('/assets/aestheticarena_com_downloaded_image_vxld.jpg') repeat;
 
 }
+.profile-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically if the container has a height */
+}
+.pp {
+
+}
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+    margin-bottom: 12px;
+}
+
 
 .about-container {
     max-width: 100%;
     margin: 0 auto;
-    background-color: #ffffffa0;
+    background-color: #ffffff40;
     
     padding: 20px;
     border: 1px solid #ddd;
@@ -307,14 +331,14 @@ form button:hover {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #000000; /* Match header color */
+    color: #ffffff; /* Match header color */
 }
 
 .about-container p {
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 20px;
-    color: #333333;
+    color: #fffbfb;
 }
 
 /* Responsive styles */
