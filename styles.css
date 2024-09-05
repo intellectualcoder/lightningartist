@@ -371,7 +371,7 @@ form button:hover {
     }
 }
 
-@media (max-width: 375px) {
+@media (min-width: 320px) and (max-width: 375px) {
 
     .burger-menu {
         top: 15px; /* Adjust according to header padding */
@@ -429,5 +429,9 @@ form button:hover {
 
     form button {
         font-size: 0.8rem;
+    }
+
+    img {
+        margin-bottom: 16px;
     }
 }
