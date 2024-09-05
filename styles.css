@@ -40,6 +40,10 @@ body::after {
     padding: 44px 100px;
 }
 
+.charitylink {
+    color: #DBFF33;
+}
+
 .star {
     position: absolute;
     background: url('/assets/aestheticarena_com_downloaded_image_vxld.jpg') no-repeat;
@@ -84,6 +88,16 @@ h2 {
 
 img {
     margin-bottom: 48px;
+}
+
+.donatewrapper {
+    margin: 18px;
+    padding: 12px;
+}
+
+.healwrapper{
+    width: 100%;
+    margin-left: 30px;
 }
 
 section#gallery {
