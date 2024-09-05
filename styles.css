@@ -417,6 +417,10 @@ form button:hover {
     color: #fffbfb;
 }
 
+section#affiliate-links {
+    background-color: rgba(51, 51, 51, 0);
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
     .burger-menu {
