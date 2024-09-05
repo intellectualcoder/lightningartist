@@ -8,13 +8,17 @@
 </head>
 <body>
     <header>
-        <h1>Contact Me</h1>
-        <p>Have a question, commission request, or need more info? Please fill out the form below!</p>
+        <h1>Lightning&#9889Artist</h1>
+
+        <h2 class="h2-pages">Contact Me</h1>
+        <p class="header-msg">Have a question, commission request, or need more info? Please fill out the form below!</p>
         <button class="burger-menu" id="burger-menu">&#9776;</button>
         <nav id="nav-menu">
             <ul class="navbar">
                 <li><a href="index.html" class="navbar-text">Home</a></li>
                 <li><a href="Gallery.html" class="navbar-text">Gallery</a></li>
+                <li><a href="AvailableWorks.html" class="navbar-text">Fine Art for Purchase</a></li>
+
                 <li><a href="about.html" class="navbar-text">About</a></li>
                 <li><a href="contact.html" class="navbar-text">Contact</a></li>
                 <li><a href="donate.html" class="navbar-text">Donate</a></li>
@@ -50,9 +54,28 @@
             <p class="contact">Contact for more info or commissions: <a href="#">lightning.artist.studio@gmail.com</a></p>
         </div>
         <p class="cr">© 2024 Lightning.Artist | Follow me on Instagram: <a href="https://www.instagram.com/lightning.artist/">@lightning.artist</a></p>
+    
+        <!-- Back to Top Button -->
+        <button id="back-to-top" class="back-to-top">↑ Back to Top</button>
     </footer>
 
     <script>
+        const backToTopButton = document.getElementById('back-to-top');
+    
+    window.onscroll = function() {
+        if (window.pageYOffset > 100) {
+            backToTopButton.style.display = 'block';
+        } else {
+            backToTopButton.style.display = 'none';
+        }
+    };
+
+    backToTopButton.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
         document.getElementById('burger-menu').addEventListener('click', function() {
             var menu = document.getElementById('nav-menu');
             menu.classList.toggle('active');

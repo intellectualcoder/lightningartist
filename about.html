@@ -15,6 +15,8 @@
                 <li><a href="index.html" class="navbar-text">Home</a></li>
 
                 <li><a href="Gallery.html" class="navbar-text">Gallery</a></li>
+                <li><a href="AvailableWorks.html" class="navbar-text">Fine Art for Purchase</a></li>
+
 <li><a href="about.html" class="navbar-text">About</a></li>
 <li><a href="contact.html" class="navbar-text">Contact</a></li>
 <li><a href="donate.html" class="navbar-text">Donate</a></li>
@@ -24,11 +26,12 @@
     </header>
 
     <section id="about">
-        <div class="about-container"><div class="profile-container">
+        <div class="about-container">
+            <div class="profile-container">
             <img src="/assets/profilepic.jpg" alt="Profile Picture" class="profile-pic">
         </div>
         
-            <h2>About Fatima</h2>
+            <h2 class="about-h2">About Fatima</h2>
             <p>
                 Fatima is a passionate local artist based in Houston, TX, known for creating awe-inspiring modern Islamic art. Her work sends a positive and powerful message about spirituality, bridging the gap between the material world and the spiritual realm through the lens of Islamic teachings. 
             </p>
@@ -46,15 +49,33 @@
 
     <footer>
         <div class="footer-wrapper">
-            
             <p class="contact">Artist Info: <a href="https://hihello.me/p/ef5f8628-0ae5-48c8-97db-c5c40d952397">Lightning.Artist</a></p>
             <p class="contact">Donations or help me buy art supplies: <a href="https://hihello.me/p/ef5f8628-0ae5-48c8-97db-c5c40d952397">Lightning.Artist</a></p>
             <p class="contact">Contact for more info or commissions: <a href="#">lightning.artist.studio@gmail.com</a></p>
-            
         </div>
         <p class="cr">© 2024 Lightning.Artist | Follow me on Instagram: <a href="https://www.instagram.com/lightning.artist/">@lightning.artist</a></p>
+    
+        <!-- Back to Top Button -->
+        <button id="back-to-top" class="back-to-top">↑ Back to Top</button>
     </footer>
+
     <script>
+        const backToTopButton = document.getElementById('back-to-top');
+    
+    window.onscroll = function() {
+        if (window.pageYOffset > 100) {
+            backToTopButton.style.display = 'block';
+        } else {
+            backToTopButton.style.display = 'none';
+        }
+    };
+
+    backToTopButton.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
         document.getElementById('burger-menu').addEventListener('click', function() {
             var menu = document.getElementById('nav-menu');
             menu.classList.toggle('active');
