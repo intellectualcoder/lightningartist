@@ -68,11 +68,18 @@ section#gallery h2 {
     border: 2px solid #333333;
 }
 
+.footer-wrapper {
+    margin: 8px;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+}
+
 footer {
     background-color: #000000;
     color: #ffffff;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
 }
 
 .contact {
@@ -80,7 +87,8 @@ footer {
 }
 
 footer p {
-    margin: 5px 0;
+    margin: 8px 8px;
+    text-align: left;
 }
 
 footer a {
@@ -89,8 +97,53 @@ footer a {
     font-weight: 200;
 }
 
-
-
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Burger menu styles */
+.burger-menu {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .burger-menu {
+        display: inline-block;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+    }
+
+    nav {
+        display: none;
+        background-color: #000000;
+        padding: 20px;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 1.2rem;
+    }
+
+    nav.active {
+        display: block;
+    }
 }

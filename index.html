@@ -9,10 +9,19 @@
 <body>
     <header>
         <h1>Lightning.Artist</h1>
+        <button class="burger-menu" id="burger-menu">&#9776;</button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="/Gallery.html">Gallery</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Donate</a></li>
+            </ul>
+        </nav>
         <p class="intro">Hi I'm Fatima! I'm a local artist in Houston, TX, dedicated to spreading positivity through art and supporting charitable causes. </p>
     </header>
 
-    <section id="gallery">
+        <section id="gallery">
         <h2>Artwork Gallery</h2>
         <div class="art-piece">
             <h3>Sanctuary of Peace [NOW SOLD]</h3>
@@ -22,47 +31,30 @@
             <img src="/assets/sancofpeace.jpg" alt="Artwork 1">
             <p></p>
             <video controls>
-                <source src="/assets/20231211_144624.mp4" type="video/mp4">
+                <source src="/assets/artvid.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <img src="/assets/20231210_214750.jpg" alt="">
             <img src="/assets/20231202_001552.jpg" alt="">
         </div>
-
-        <div class="art-piece">
-            <h3>The Captive Mosque</h3>
-            <p>[SOLD] Commission art</p>
-            <p>This was a custom art work that was requested from a friend for their family members who live in Iraq</p>
-            <img src="/assets/20201021_170527.jpg" alt="Artwork 2">
-            <img src="/assets/20201021_154007.jpg" alt="Artwork 2">
         </div>
-        <div class="art-piece">
-            <h3>Intentions</h3>
-            <p>[SOLD] Commission art</p>
-            <p>Custom art work that was requested from a friend</p>
-            <img src="/assets/mandy1.jpg" alt="Artwork 2">
-            <img src="/assets/Mandy2.jpg" alt="Artwork 2">
-        </div>
-
-        <div class="art-piece">
-            <h3>Pure Intentions</h3>
-            <p>[SOLD] Commission art</p>
-            <p></p>
-            <img src="/assets/20201023_123055.jpg" alt="Artwork 2">
-            <img src="/assets/20201023_170141.jpg" alt="Artwork 2">
-            
-        </div>
-        <!-- Repeat as needed for more artwork -->
     </section>
 
     <footer>
-        <p class="contact">Artist Info: <a href="https://hihello.me/p/ef5f8628-0ae5-48c8-97db-c5c40d952397">Lightning.Artist</a></p>
-        <p class="contact">Donations or help me buy art supplies: <a href="https://hihello.me/p/ef5f8628-0ae5-48c8-97db-c5c40d952397">Lightning.Artist</a></p>
-        <p class="contact">Follow me on Instagram: <a href="#">@lightning.artist</a></p>
-        <p class="contact">Contact for more info or commissions: <a href="#">lightning.artist.studio@gmail.com</a></p>
+        <div class="footer-wrapper">
+            <p class="contact">Artist Info: <a href="https://hihello.me/p/ef5f8628-0ae5-48c8-97db-c5c40d952397">Lightning.Artist</a></p>
+            <p class="contact">Donations or help me buy art supplies: <a href="https://hihello.me/p/ef5f8628-0ae5-48c8-97db-c5c40d952397">Lightning.Artist</a></p>
+            <p class="contact">Follow me on Instagram: <a href="#">@lightning.artist</a></p>
+            <p class="contact">Contact for more info or commissions: <a href="#">lightning.artist.studio@gmail.com</a></p>
+        </div>
     </footer>
 
     <script>
+        document.getElementById('burger-menu').addEventListener('click', function() {
+            var menu = document.getElementById('nav-menu');
+            menu.classList.toggle('active');
+        });
+
         document.addEventListener('DOMContentLoaded', function() {
             alert(' "Welcome to my Art page!"');
         });
