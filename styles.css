@@ -80,7 +80,7 @@ img {
 }
 
 section#gallery {
-    padding: 84px;
+    padding: 32px;
     background-color: transparent; /* Transparent to show background stars */
 }
 
@@ -396,7 +396,7 @@ form button:hover {
     }
 
     section#gallery {
-        padding: 15px;
+        padding: 4px;
     }
 
     section#gallery h2 {
