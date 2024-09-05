@@ -8,8 +8,19 @@
 </head>
 <body>
     <header>
-        <h1>Lightning.Artist</h1>
-        <p class="intro">Hi I'm Fatima! I'm a local artist in Houston, TX, dedicated to spreading positivity through art and supporting charitable causes. </p>
+        <h1>Lightning&#9889Artist</h1>
+        <button class="burger-menu" id="burger-menu">&#9776;</button>
+        <nav id="nav-menu">
+            <ul class="navbar">
+                <li><a href="index.html" class="navbar-text">Home</a></li>
+
+                <li><a href="Gallery.html" class="navbar-text">Gallery</a></li>
+<li><a href="about.html" class="navbar-text">About</a></li>
+<li><a href="contact.html" class="navbar-text">Contact</a></li>
+<li><a href="#" class="navbar-text">Donate</a></li>
+
+            </ul>
+        </nav>
     </header>
 
     <section id="gallery">
@@ -50,6 +61,11 @@
         </div>
         <p>© 2024 Lightning.Artist | Follow me on Instagram: <a href="#">@lightning.artist</a></p>
     </footer>
-
+    <script>
+        document.getElementById('burger-menu').addEventListener('click', function() {
+            var menu = document.getElementById('nav-menu');
+            menu.classList.toggle('active');
+        });
+    </script>
     </body>
 </html>
