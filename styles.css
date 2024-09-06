@@ -46,6 +46,7 @@ body::after {
 .h1wrapper{
     display: flex;
     justify-content: center;
+    margin-top: 32px;
 }
 
 .bolt {
@@ -124,6 +125,14 @@ img {
     margin-bottom: 48px;
 }
 
+.donatevh {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .donatewrapper {
     padding: 8px 40px;
 }
@@ -177,20 +186,38 @@ section#gallery h2 {
 }
 
 footer {
-    background-color: #00000035;
-    color: #ffffff;
-    text-align: left;
-    padding: 20px 15px;
-    border-top: 1px solid #333; /* Add a border to separate from content above */
+    padding: 24px 0 0;          /* Vertical padding for space */
+    border-top: 1px solid #e0e0e032; /* Subtle top border */
+    font-family: 'montserrat', sans-serif;
 }
 
-.footer-wrapper {
-    margin: 0 auto; /* Center the content */
-    max-width: 800px; /* Limit the maximum width */
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;           /* Center the container */
+    padding: 0 20px;          /* Horizontal padding */
+}
+
+.footer-links {
+    list-style: none;         /* Remove bullet points */
+    padding: 12px;
+    margin: 0;
+    justify-content: center;  /* Center items horizontally */
+}
+
+.footer-links li {
+    text-align: center;  
+    padding-bottom: 12px;     /* Center text within each item */
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #DBFF33;           /* Dark grey text color */
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ebebeb;           /* Change to black on hover */
 }
 
 .contact {
@@ -214,7 +241,7 @@ footer {
 .cr {
     font-size: 0.9rem;
     color: #ffffff;
-    margin: 32px 0 32px;
+    margin: 0px 0 64px;
     text-align: center;
 }
 
@@ -257,8 +284,8 @@ footer {
     color: #DBFF33;
     cursor: pointer;
     position: absolute;
-    top: 20px; /* Adjust according to header padding */
-    right: 20px; /* Adjust according to header padding */
+    top: 56px; /* Adjust according to header padding */
+    right: 32px; /* Adjust according to header padding */
     z-index: 1000; /* Ensure it’s on top */
 }
 
@@ -276,10 +303,13 @@ nav {
         padding: 0;
         margin: 0;
         align-items: center; /* Center items vertically */
+        text-align: center;
 }
 
 .navbar li {
     margin: 0 10px;
+    text-align: center;
+
 }
 
 .navbar-text {
@@ -287,6 +317,8 @@ nav {
         color: #DBFF33;
         margin: 0 15px; /* Space between menu items */
         font-size: 1rem; /* Default font size */
+        text-align: center;
+
     }
 
 .navbar-text:hover {
