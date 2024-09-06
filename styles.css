@@ -39,19 +39,38 @@ body::after {
     background-size: 400px 400px; /* Adjust size of stars */
 }
 
-/* Generate random star positions */
+.landing {
+    height: 30vh;
+}
+
+.h1wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.bolt {
+    /* Styles for the lightningbolt class */
+    width: 20px; /* Set the width of the image */
+    height: 30; /* Set the height of the image */
+    vertical-align: middle; /* Align the image with the text */
+    margin-left: 5px; /* Optional: Add space between the image and the text */
+    margin-right: 5px; /* Optional: Add space between the image and the text */
+}
+
 .bismillah {
     margin: 32px 0px 0px;
     padding: 8px;
-    color: #ffffff7d;
+    color: #4a4a4a;
 }
 
-.intro {    
+
+
+.pageintro {    
     font-style: italic;
     padding: 16px 20px;
 }
 
-.charitylink {
+.links {
     color: #DBFF33;
 }
 
@@ -94,6 +113,8 @@ header p {
     margin: 20px 0;
 }
 
+
+
 h2 {
     font-family: 'Playfair Display', serif;
     margin-bottom: 30px;
@@ -104,12 +125,15 @@ img {
 }
 
 .donatewrapper {
-    margin: 18px;
-    padding: 12px;
+    padding: 8px 40px;
 }
 
 .healwrapper{
     width: 100%;
+}
+
+.heallogo {
+    width: 230px;
 }
 
 section#gallery {
@@ -138,7 +162,7 @@ section#gallery h2 {
     font-size: 1.25rem;
     font-weight:100;
     margin: 15px 0 10px;
-    color:#DBFF33;
+    color:#ffffff;
 }
 
 .art-piece p {
@@ -171,13 +195,13 @@ footer {
 
 .contact {
     font-weight: 500;
-    color: #DBFF33;
+    color: #ffffff;
     margin: 8px;
     line-height: 1.5;
 }
 
 .contact a {
-    color: #ffffff;
+    color: #DBFF33;
     text-decoration: underline;
     font-weight: 400;
 }
@@ -271,6 +295,8 @@ nav {
 
 .h2-pages {
     color: #4a4a4a ;
+    text-align: center;
+    font-size: 2.5rem;
 }
 
 /* Contact Form Styles */
@@ -394,7 +420,7 @@ form button:hover {
 .about-container {
     max-width: 100%;
     margin: 0 auto;
-    background-color: #ffffff40;
+    background-color: #ffffff16;
     
     padding: 20px;
     border: 1px solid #ddd;
@@ -406,7 +432,7 @@ form button:hover {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #9c9a9a; /* Match header color */
+    color: #4a4a4a; /* Match header color */
 }
 
 .about-container p {
@@ -418,7 +444,13 @@ form button:hover {
 }
 
 section#affiliate-links {
-    background-color: rgba(51, 51, 51, 0);
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.affiliateimg {
+    width: 80%;
 }
 
 /* Responsive styles */
@@ -476,7 +508,7 @@ section#affiliate-links {
 }
 
 @media (min-width: 320px) and (max-width: 536px) {
-
+    
     .burger-menu {
         top: 15px; /* Adjust according to header padding */
         right: 15px; /* Adjust according to header padding */
