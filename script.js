@@ -1,9 +1,9 @@
 
-
 document.getElementById('burger-menu').addEventListener('click', function() {
     var menu = document.getElementById('nav-menu');
     menu.classList.toggle('active');
 });
+
 // Visitor Counter using CountAPI for global count
 fetch('https://api.countapi.xyz/hit/lightningartiststudio.com/visits')
     .then(response => response.json())
