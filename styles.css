@@ -13,6 +13,13 @@ margin: 0;
     color: #ffffff; /* Ensure text is readable against dark background */
     overflow-x: hidden; /* Prevent horizontal scroll */
     position: relative;
+        opacity: 1;
+        transition: opacity 0.5s ease-in-out;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
 /* Create static stars in the background */
@@ -43,24 +50,16 @@ body::after {
     height: 25vh;
 }
 
-.h1wrapper{
-    display: flex;
-    justify-content: center;
-    margin-top: 32px;
-    color: whitesmoke;
-    text-decoration: none;
-}
-
-.glow-text {
+.h1wrapper h1 {
     color: #fff;
     font-size: 36px;
     text-align: center;
     transition: 0.3s ease; /* Smooth transition */
 }
 
-.glow-text:active {
-    text-shadow: 0 0 10px #DBFF33, 0 0 20px #DBFF33, 0 0 30px #DBFF33, 0 0 40px #DBFF33, 0 0 50px #DBFF33; /* Glowing effect */
-    color: #DBFF33; /* Text color changes to match glow */
+.h1wrapper:active h1 {
+    text-shadow: 0 0 10px #DBFF33, 0 0 20px #DBFF33, 0 0 30px #DBFF33, 0 0 40px #DBFF33, 0 0 50px #DBFF33;
+    color: #DBFF33;
 }
 
 /* Optionally, style the image within the link */
