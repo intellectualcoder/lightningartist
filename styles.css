@@ -50,16 +50,24 @@ body::after {
     height: 25vh;
 }
 
-.h1wrapper h1 {
-    color: #fff;
-    font-size: 36px;
-    text-align: center;
-    transition: 0.3s ease; /* Smooth transition */
+.h1wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    color: whitesmoke;
+    text-decoration: none;
 }
 
-.h1wrapper:active h1 {
-    text-shadow: 0 0 10px #DBFF33, 0 0 20px #DBFF33, 0 0 30px #DBFF33, 0 0 40px #DBFF33, 0 0 50px #DBFF33;
-    color: #DBFF33;
+.glow-text {
+    color: #fff;
+    font-size: 32px;
+    text-align: center;
+    transition: 0.5s ease; /* Smooth transition */
+}
+
+.glow-text:active {
+    text-shadow: 0 0 10px #DBFF33, 0 0 20px #DBFF33, 0 0 30px #DBFF33, 0 0 40px #DBFF33, 0 0 50px #DBFF33; /* Glowing effect */
+    color: #DBFF33; /* Text color changes to match glow */
 }
 
 /* Optionally, style the image within the link */
@@ -505,14 +513,15 @@ align-items: center;
 .product-container {
     display: flex;
     margin: 24px;
-    
+    width: 80%;
 }
 
 .product {
     align-items: center;
     justify-content: center;
     display: flex;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 8px 0px 0px;
+    width:100%
 }
 
 .discount {
@@ -653,5 +662,9 @@ align-items: center;
     .footer-wrapper {
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .product-container {
+        flex-direction: column;
     }
 }
