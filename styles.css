@@ -70,7 +70,7 @@ body::after {
 }
 
 .glow-text:active {
-    text-shadow: 0 0 10px #DBFF33, 0 0 20px #DBFF33, 0 0 30px #DBFF33, 0 0 40px #DBFF33, 0 0 50px #DBFF33; /* Glowing effect */
+    text-shadow: 0 0 10px #DBFF33, 0 0 20px #DBFF33, 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 50px #ffffff; /* Glowing effect */
     color: #DBFF33; /* Text color changes to match glow */
 }
 
@@ -86,32 +86,32 @@ body::after {
     margin-right: 5px; /* Add space between the image and the text */
     
     /* Add glow effect */
-    filter: drop-shadow(0 0 8px #dbff33) drop-shadow(0 0 15px #dbff33);
+    filter: drop-shadow(0 0 8px #dbff33) drop-shadow(0 0 15px #ffffff);
     animation: glow-bolt 1s ease-in-out infinite alternate;
 }
 
 /* Glow animation for the bolt */
 @keyframes glow-bolt {
     from {
-        filter: drop-shadow(0 0 8px #dbff33) drop-shadow(0 0 15px #dbff33);
+        filter: drop-shadow(0 0 8px #dbff33) drop-shadow(0 0 15px #fbfbfb);
     }
     to {
-        filter: drop-shadow(0 0 20px #dbff33) drop-shadow(0 0 30px #dbff33);
+        filter: drop-shadow(0 0 20px #dbff33) drop-shadow(0 0 30px #ffffff);
     }
 }
 
 /* Glowing text for the h1 elements */
 .glow-text {
     text-shadow: 0 0 8px #dbff33, 0 0 15px #dbff33;
-    animation: glow-text 2s ease-in-out infinite alternate;
+    animation: glow-text 1s ease-in-out infinite alternate;
 }
 
 @keyframes glow-text {
     from {
-        text-shadow: 0 0 8px #dbff33, 0 0 15px #dbff33;
+        text-shadow: 0 0 8px #02eaf7, 0 0 15px #fcfcfc;
     }
     to {
-        text-shadow: 0 0 20px #dbff33, 0 0 30px #dbff33;
+        text-shadow: 0 0 20px #dbff33, 0 0 30px #ffffff;
     }
 }
 
@@ -417,8 +417,8 @@ footer {
     color: #DBFF33;
     cursor: pointer;
     position: absolute;
-    top: 56px; /* Adjust according to header padding */
-    right: 32px; /* Adjust according to header padding */
+    top: 52px; /* Adjust according to header padding */
+    right: 16px; /* Adjust according to header padding */
     z-index: 1000; /* Ensure it’s on top */
 }
 
@@ -442,7 +442,7 @@ nav {
 .navbar li {
     margin: 0 10px;
     text-align: center;
-
+display: flex;
 }
 
 .navbar-text {
@@ -631,6 +631,10 @@ align-items: center;
     width: 80%;
 }
 
+.terms-of-use {
+    padding: 40px 72px;
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
     .burger-menu {
@@ -639,7 +643,7 @@ align-items: center;
 
     nav {
         display: none; /* Hide nav by default on small screens */
-        background-color: #000000;
+        background-color: #000000d7;
         padding: 20px;
         position: absolute;
         top: 60px; /* Adjust based on header height */
@@ -687,10 +691,6 @@ align-items: center;
 
 @media (min-width: 320px) and (max-width: 536px) {
     
-    .burger-menu {
-        top: 15px; /* Adjust according to header padding */
-        right: 15px; /* Adjust according to header padding */
-    }
 
     .navbar-text {
         font-size: 0.9rem; /* Smaller font size for very small screens */
