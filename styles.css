@@ -54,6 +54,10 @@ body::after {
     
 }
 
+.container {
+    padding: 0px 40px;
+}
+
 .h1wrapper{
     display: flex;
     justify-content: center;
@@ -127,6 +131,7 @@ body::after {
 .pageintro {    
     font-style: italic;
     padding: 16px 20px;
+    margin: 12px 32px;
 }
 
 .links {
@@ -251,9 +256,6 @@ img {
     justify-content: center;
 }
 
-.donatewrapper {
-    padding: 8px 40px;
-}
 
 .healwrapper{
     display: flex;
@@ -277,7 +279,17 @@ section#gallery h2 {
     margin-bottom: 30px;
 }
 
-.art-piece {
+.artwork-h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    font-weight:100;
+    margin: 15px 0 10px;
+    color:#ffffff;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.art-pieces {
     margin-bottom: 48px;
     text-align: center;
     display: flex;
@@ -289,17 +301,17 @@ section#gallery h2 {
 }
 
 .Art-Description {
-    text-align: left;
-    width: 80%;
+    font-family: 'Playfair Display', serif;
+margin: 12px 32px
 }
 
-.art-piece img {
+.art-pieces img {
     max-width: 85%;
     height: auto;
     border: 1px solid #333333;
 }
 
-.art-piece h3 {
+.art-pieces h3 {
     font-family: 'Playfair Display', serif;
     font-size: 1.25rem;
     font-weight:100;
@@ -307,13 +319,13 @@ section#gallery h2 {
     color:#ffffff;
 }
 
-.art-piece p {
+.art-pieces p {
     font-family: 'Lora', serif;
     font-size: 0.9rem;
     margin: 0 0 15px;
 }
 
-.art-piece video {
+.art-pieces video {
     max-width: 100%;
     border: 1px solid #333333;
 }
@@ -401,6 +413,7 @@ footer {
     font-size: 16px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease;
+    z-index: 1000; /* Ensure it stays on top */
 }
 
 .back-to-top:hover {
@@ -425,7 +438,6 @@ footer {
 nav {
     display: flex;
     justify-content: center;
-    background-color: #000000;
     padding: 10px 0;
 }
 
@@ -440,9 +452,10 @@ nav {
 }
 
 .navbar li {
-    margin: 0 10px;
+    margin: 0 4px;
     text-align: center;
 display: flex;
+font-size:;
 }
 
 .navbar-text {
@@ -724,12 +737,12 @@ align-items: center;
         margin-bottom: 20px;
     }
 
-    .art-piece h3 {
+    .art-pieces h3 {
         font-size: 1.2rem;
         margin: 10px 0 5px;
     }
 
-    .art-piece p {
+    .art-pieces p {
         font-size: 0.8rem;
         margin: 0 0 15px;
     }

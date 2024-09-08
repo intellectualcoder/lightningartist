@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artist Website</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -38,7 +39,8 @@
 </div>
 
     <section id="gallery">
-
+<div class="container">
+<div class="art-pieces">
         <div class="art-piece">
             <h3>The Captive Mosque</h3>
             <p>[SOLD] Commission art</p>
@@ -73,8 +75,10 @@
             <p>[SOLD] Commission art</p>
             <p>Acrylic paint on canvas</p>
             <img src="/assets/Screenshot 2024-09-07 at 1.58.21 PM.png" alt="Artwork 2">
-            
         </div>
+        </div>
+    </div>
+
         <!-- Repeat as needed for more artwork -->
     </section>
 
@@ -102,27 +106,6 @@
         <!-- Back to Top Button -->
         <button id="back-to-top" class="back-to-top">↑ Back to Top</button>
 
-    <script>
-        const backToTopButton = document.getElementById('back-to-top');
     
-    window.onscroll = function() {
-        if (window.pageYOffset > 100) {
-            backToTopButton.style.display = 'block';
-        } else {
-            backToTopButton.style.display = 'none';
-        }
-    };
-
-    backToTopButton.addEventListener('click', function() {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    });
-        document.getElementById('burger-menu').addEventListener('click', function() {
-            var menu = document.getElementById('nav-menu');
-            menu.classList.toggle('active');
-        });
-    </script>
     </body>
 </html>
