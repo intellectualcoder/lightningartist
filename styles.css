@@ -652,6 +652,14 @@ align-items: center;
 
 /* Responsive styles */
 @media (min-width: 768px) and (max-width: 1140px) {
+    
+    .container {
+        padding: 0px 32px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 770px) {
+    
     .burger-menu {
         display: inline-block;
     }
@@ -702,14 +710,6 @@ align-items: center;
     .navbar li {
         margin: 10px 0;
     }
-    .container {
-        padding: 0px 32px;
-    }
-}
-
-@media (min-width: 320px) and (max-width: 770px) {
-    
-
     .navbar-text {
         font-size: 0.9rem; /* Smaller font size for very small screens */
     }
