@@ -40,7 +40,7 @@ body::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('stars.gif') repeat;
+    background: url('/magic-stars.gif') repeat;
     z-index: -1; /* Place behind other content */
     opacity: 0.20; /* Adjust opacity of stars if needed */
     background-size: 400px 350px; /* Adjust size of stars */
@@ -126,7 +126,19 @@ body::after {
     color: #4a4a4a;
 }
 
+.landingheader {
+    margin: 56px 0px 12px 0px;
+    font-family: 'Orbitron', sans-serif;
+    color: #b0b0b0;
+    width: 70%;
+    text-align: right;
+}
 
+.landingp {
+    width: 50%;
+    text-align: right;
+    font-style: italic;
+}
 
 .pageintro {    
     font-style: italic;
@@ -176,7 +188,97 @@ header p {
     font-size: 1rem;
     margin: 20px 0;
 }
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%; /* Adjust the width as necessary */
+    margin: 0 auto; /* Center the hero section horizontally */
+    padding: 30px 50px;
+    color: #fff; /* White text for contrast */
+}
 
+.hero-header-wrapper {
+    text-align: right;
+    flex: 1; /* Take up available space to the left of the image */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align text to the right */
+    justify-content: center;
+}
+
+.hero-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    max-width: 450px; /* Restrict paragraph width for better readability */
+    margin-bottom: 20px; /* Add space between paragraph and button */
+}
+
+.hero-img-wrapper {
+    flex-shrink: 0; /* Prevent the image from shrinking */
+    overflow: hidden;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%; /* Circular image */
+    margin-left: 50px; /* Add space between the text and image */
+    position: relative;
+}
+
+.hero-img-wrapper img {
+    width: 210%; /* Zoom effect */
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    top: -48%; /* Adjust the position to show the desired part of the image */
+    left: -42%;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* 3D shadow effect */
+}
+
+button.hero {
+    margin-top: 20px;
+    background-color: #DBFF33;
+    color: #000;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button.hero:hover {
+    transform: translateY(-5px);
+    background-color: #a6cc28;
+}
+.SOPwrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 75%; /* Adjust as needed */
+    margin: 0 auto; /* Centers the div horizontally */
+    text-align: left; /* Centers the text within the wrapper */
+}
+
+.SOPtitle {
+    color: white;
+    margin-bottom: 15px; /* Add some space between title and description */
+}
+
+.SOPDescription {
+    color: white;
+    font-size: 1.1em; /* Adjust font size if necessary */
+    line-height: 1.6;
+    max-width: 100%; /* Ensures content doesn't exceed wrapper width */
+}
 
 
 h2 {
@@ -297,12 +399,56 @@ section#gallery h2 {
     align-items: center;
 }
 
-.Artwrok-Description {
+.Museum-Label {
+    margin: 12px 32px;
+    border-radius: 12px;
+    background: url('/bgfons.com - paper_texture327.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 20px;
+    font-size: 1.2em;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    /* 3D Effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7), /* Main shadow */
+                0 0 10px rgba(255, 255, 255, 0.2) inset, /* Inner glow for the border */
+                inset 0 0 8px rgba(0, 0, 0, 0.5); /* Inner depth */
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    /* Optional for hover effect */
+    cursor: pointer;
+}
+
+
+.artwork-date {
+    color: black;
+    margin-bottom: 4px;
+}
+
+.artwork-type {
+    color: black;
+margin-top: 0px;
+}
+
+.artwork-materials {
+color:#000000;
+margin-top: 0px;
+}
+
+.Artwork-Description {
 }
 
 .Art-Description {
+    color: black;
+
     font-family: 'Playfair Display', serif;
-margin: 12px 32px
+margin: 12px 32px;
+text-align: left;
+}
+
+.artworks-wrapper {
+    text-align: center;
 }
 
 .art-pieces img {
@@ -315,14 +461,16 @@ margin: 12px 32px
     font-family: 'Playfair Display', serif;
     font-size: 1.25rem;
     font-weight:100;
-    margin: 15px 0 10px;
-    color:#ffffff;
+    text-align: left;
+    margin: 15px 8px 10px;
+    color:#040404;
 }
 
-.art-pieces p {
+.art-pieces {
     font-family: 'Lora', serif;
     font-size: 0.9rem;
     margin: 0 0 15px;
+    text-align: left;
 }
 
 .art-pieces video {
@@ -658,6 +806,51 @@ align-items: center;
     }
 }
 
+@media (max-width: 767px) {
+    .hero-section {
+        flex-direction: column; /* Stack the image and text vertically */
+        text-align: center; /* Center align text for mobile */
+        padding: 20px;
+    }
+
+    .hero-header-wrapper {
+        align-items: center; /* Center the text */
+        margin-bottom: 20px; /* Add space between text and image */
+    }
+
+    .hero-section h2 {
+        font-size: 2em; /* Smaller font size for smaller screens */
+    }
+
+    .hero-section p {
+        font-size: 1em; /* Adjust paragraph font size */
+        max-width: 100%; /* Make the paragraph take full width */
+    }
+
+    .hero-img-wrapper {
+        margin: 0 auto 20px; /* Center the image and add space below it */
+        width: 200px;
+        height: 200px; /* Smaller image for mobile */
+    }
+
+    .hero-img-wrapper img {
+        width: 210%; /* Maintain zoom effect */
+        top: -48%;
+        left: -42%;
+    }
+
+    .landingp {
+        width: 80%;
+        margin: 0%;
+    }
+
+    button.hero {
+        padding: 10px 20px; /* Slightly smaller button */
+        font-size: 0.9em;
+        margin: 0px;
+    }
+}
+
 @media (min-width: 320px) and (max-width: 770px) {
     
     .burger-menu {
@@ -747,6 +940,15 @@ align-items: center;
         margin: 10px 0 5px;
     }
 
+    .artwork-date {
+        font-size: 0.8rem;
+        margin: 0 0 15px;
+    }
+    .artwork-type {
+        font-size: 0.8rem;
+        margin: 0 0 15px;
+    }
+
     .art-pieces p {
         font-size: 0.8rem;
         margin: 0 0 15px;
@@ -782,6 +984,6 @@ align-items: center;
         flex-direction: column;
     }
     .container {
-        padding: 0px 32px;
+        padding: 0px 42px;
     }
 }
