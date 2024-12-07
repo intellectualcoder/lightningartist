@@ -42,7 +42,7 @@ body::after {
     height: 100%;
     background: url('/magic-stars.gif') repeat;
     z-index: -1; /* Place behind other content */
-    opacity: 0.38; /* Adjust opacity of stars if needed */
+    opacity: 0.3; /* Adjust opacity of stars if needed */
     background-size: 400px 350px; /* Adjust size of stars */
 }
 
