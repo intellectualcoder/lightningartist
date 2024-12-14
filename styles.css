@@ -464,7 +464,7 @@ text-align: left;
     margin: 15px 8px 10px 15px;
     text-align: center;
     padding: 20px;
-    color:#040404;
+    color:#848671;
 }
 
 .art-pieces {
@@ -797,6 +797,13 @@ align-items: center;
 
 .terms-of-use {
     padding: 40px 72px;
+}
+
+/* KIDS ART PAGES */
+
+.spanbold {
+    font-weight: bold;
+    color: #DBFF33;
 }
 
 /* Responsive styles */
