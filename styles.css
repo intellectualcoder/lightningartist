@@ -846,7 +846,7 @@ align-items: center;
     }
 
     button.hero {
-        padding: 10px 20px; /* Slightly smaller button */
+        padding: 20px 20px; /* Slightly smaller button */
         font-size: 0.9em;
         margin: 0px;
     }
