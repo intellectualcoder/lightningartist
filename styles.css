@@ -83,10 +83,11 @@ body::after {
 
 /* Glowing effect for the bolt image */
 .bolt {
-    width: 20px; /* Set the width of the image */
-    height: 30px; /* Set the height of the image */
+    width: 45px; /* Set the width of the image */
+    height: 60px; /* Set the height of the image */
     vertical-align: middle; /* Align the image with the text */
     margin-left: 5px; /* Add space between the image and the text */
+    padding-bottom: 20px;
     margin-right: 5px; /* Add space between the image and the text */
     
     /* Add glow effect */
